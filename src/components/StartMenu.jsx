@@ -1,8 +1,11 @@
 import React from "react";
+import styles from '../styles/StartMenu.module.css'
 
 function StartMenu({onStartClick}){
     return (
-       <button onClick={onStartClick}>ready to fight</button>
+    <div className={styles.main}>
+       <button className={styles.startButton} onClick={onStartClick}>ready to fight</button>
+       </div>
     )
 }
 

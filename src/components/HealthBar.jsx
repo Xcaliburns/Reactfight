@@ -7,7 +7,7 @@ function HealthBar({label,health,maxHealth}){
             <div className={styles.label}>{label}</div>
 
             <div className={styles.max}>
-                <div className={styles.value}>
+                <div className={styles.value} style={{width:`?{(value/maxValue)*100}%`}}>
 
                 </div>
             </div>
