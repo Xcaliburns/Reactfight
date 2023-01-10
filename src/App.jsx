@@ -4,8 +4,8 @@ import Fight from './components/Fight'
 import GameOver from './components/GameOver'
 import StartMenu from './components/StartMenu'
 import PlayerSummary from './components/PlayerSummary'
-import HealthBar from './components/HealthBar'
-import FightMenu from './components/FightMenu'
+
+
 
 function App() {
  

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from '../styles/HealthBar.module.css'
 
-function HealthBar({label,health,maxHealth}){
+function HealthBar({label,value,maxValue}){
     return(
         <div className={styles.main}>
             <div className={styles.label}>{label}</div>

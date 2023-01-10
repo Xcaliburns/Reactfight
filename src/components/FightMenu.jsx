@@ -3,15 +3,14 @@ import styles from '../styles/FightMenu.module.css'
 
 
 function FightMenu({onAttack,onMagic,onHeal}){
-    return(
+     return(
         <div className={styles.main}>
-            <div className={styles.option}>Attack</div>
-            <div className={styles.option}>Magic</div>
-            <div className={styles.option}>Heal</div>
-
-
+            <div onClick={onAttack} className={styles.option}>Attack</div>
+            <div onClick={onMagic} className={styles.option}>Magic</div>
+            <div onClick={onHeal}  className={styles.option}>Heal</div>
         </div>
     )
 }
 
 export default FightMenu
+
