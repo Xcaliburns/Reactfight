@@ -12,6 +12,7 @@ function Fight(){
     return(
         
         <div className={styles.main}>
+            <div className={styles.characters}>
         <div className={styles.opponent}> 
         <div className={styles.summary}>
             <PlayerSummary 
@@ -20,6 +21,28 @@ function Fight(){
             maxHealth={opponentStats.maxHealth} />
         </div>
          </div>  
+    
+ 
+           
+            <div className={styles.gameImages}>
+                <div className={styles.playerSprite}>
+                    <img src={playerStats.img} 
+                    alt={playerStats.name}
+                    //  className={styles} 
+                    />
+                    </div>
+                  <div className={styles.gameHeader}>
+                     vs 
+                  </div>   
+                <div className={styles.opponentSprite}>
+                    <img src={opponentStats.img}
+                     alt={opponentStats.name}
+                    //    className={styles} 
+                       />
+            </div>
+        
+    </div>
+
         <div className={styles.user}> 
         <div className={styles.summary}>
             <PlayerSummary main 
@@ -28,18 +51,19 @@ function Fight(){
             maxHealth={playerStats.maxHealth}/>
         </div> 
         
-        
+       
 
-         <div className={styles.hudChild}>
-           
-                
+         <div className={styles.hudChild}>                
                 <FightMenu                         
                         onAttack={()=>console.log('Prend ca dans ta gueule')}
                         onMagic={()=>console.log('c\'est moi Harry Potter')}
                         onHeal={()=>console.log('Tu me reconnais ? je suis la fee des coeurs dans zelda')}
             />
             </div>
-        </div></div>
+        
+        </div>
+        </div>
+        </div>
         
     )
 }
